@@ -1,0 +1,55 @@
+/* Paleta de BRÚJULA: papel, tinta y rojo «camino». */
+:root {
+  --papel: #f4f5ef; --papel-2: #eaece3; --tinta: #1d2420; --tinta-2: #4a524c;
+  --camino: #c4342a; --camino-osc: #9f2820; --veg: #d5e4bf; --agua: #cfe3ed;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--tinta); background: var(--papel);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+
+.pagina { min-height: 100vh; display: flex; flex-direction: column; }
+.centrada { align-items: center; justify-content: center; padding: 24px; }
+.texto { max-width: 760px; margin: 0 auto; padding: 48px 24px; line-height: 1.6; }
+.texto h1 { font-size: 2.4rem; margin: 16px 0; }
+
+.cabecera, .pie { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; }
+.cabecera { border-bottom: 1.5px solid var(--tinta); }
+.pie { border-top: 1.5px solid var(--tinta); margin-top: auto; color: var(--tinta-2); font-size: .95rem; }
+nav { display: flex; gap: 20px; align-items: center; }
+nav a { text-decoration: none; font-weight: 600; }
+nav a:hover { color: var(--camino); }
+.marca { font-weight: 900; letter-spacing: .06em; text-decoration: none; color: var(--tinta); }
+.marca::first-letter { color: var(--camino); }
+
+.hero { max-width: 900px; padding: 80px 40px; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 4.5rem); line-height: 1.02; margin: 12px 0 20px; }
+.hero h1 span { color: var(--camino); }
+.hero p { font-size: 1.2rem; color: var(--tinta-2); max-width: 60ch; }
+.etiqueta { font-size: .85rem !important; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--camino) !important; }
+
+.boton { display: inline-block; background: var(--camino); color: #fff !important; padding: 10px 18px; border-radius: 4px;
+  border: none; font: inherit; font-weight: 700; cursor: pointer; text-decoration: none; }
+.boton:hover { background: var(--camino-osc); }
+.grande { margin-top: 16px; padding: 14px 26px; font-size: 1.1rem; }
+.volver { color: var(--camino); font-weight: 600; text-decoration: none; }
+
+.tarjeta { background: #fbfcf8; border: 1.5px solid var(--tinta); padding: 32px; width: 100%; max-width: 380px;
+  display: flex; flex-direction: column; gap: 16px; }
+.tarjeta h1 { margin: 0; }
+label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+input { font: inherit; padding: 10px; border: 1.5px solid var(--tinta); border-radius: 3px; background: #fff; }
+.error { text-align: center; align-items: center; }
+.codigo { font-size: 5rem; font-weight: 900; color: var(--camino); margin: 0; line-height: 1; }
+
+.panel { display: flex; min-height: 100vh; }
+.lateral { width: 240px; background: var(--tinta); color: var(--papel); padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+.lateral .marca { color: var(--papel); margin-bottom: 16px; }
+.lateral .activo { color: #fff; font-weight: 700; }
+.salir { margin-top: auto; color: #f3b1aa; font-weight: 700; text-decoration: none; }
+.contenido { flex: 1; padding: 48px; }
+.cuadros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.cuadros div { background: #fbfcf8; border: 1.5px solid var(--tinta); padding: 20px; display: flex; flex-direction: column; }
+.cuadros strong { font-size: 2.2rem; }
+.nota { color: var(--tinta-2); font-size: .9rem; }
