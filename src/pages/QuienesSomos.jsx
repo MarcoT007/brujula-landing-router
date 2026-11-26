@@ -13,7 +13,9 @@ export default function QuienesSomos() {
       <h2>Equipo</h2>
       <ul>
         <li>Marco Leonardo Talavera Sánchez · Desarrollo</li>
-        {/* Agrega aquí a los demás integrantes del equipo */}
+        <li>Edgar Andrés Valles González</li>
+        <li>Damián Roberto Mendoza García</li>
+        <li>Jesús Adrián Villalobos Robles</li>
       </ul>
       <h2>Nuestra meta</h2>
       <p>Que cada alumno estudie con técnicas que sí funcionan y no pierda ninguna fecha importante.</p>
