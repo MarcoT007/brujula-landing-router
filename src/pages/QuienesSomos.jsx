@@ -12,7 +12,7 @@ export default function QuienesSomos() {
       </p>
       <h2>Equipo</h2>
       <ul>
-        <li>Marco Leonardo Talavera Sánchez · Desarrollo</li>
+        <li>Marco Leonardo Talavera Sánchez</li>
         <li>Edgar Andrés Valles González</li>
         <li>Damián Roberto Mendoza García</li>
         <li>Jesús Adrián Villalobos Robles</li>
